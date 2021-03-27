@@ -1,0 +1,1577 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Seat selection</title>
+</head>
+
+<body>
+
+    <h1>Seat selection</h1>
+
+
+
+    <div>
+        <select name="select" id="selection" onchange="seatCancel()">
+      <option value="All">All</option>
+      <option value="Grandparents">Grandparents</option>
+    </select>
+    </div>
+    <div>
+        <p>Please choose your seat</p>
+    </div>
+    <div class="flexbox">
+
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+
+
+        <div class="row">
+            <section id="seat-unselctable">
+                <input id="seat-1" class="seat-select" type="checkbox" value="1" name="seat[]" onclick="togg()" />
+                <label for="seat-1" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-2" class="seat-select" type="checkbox" value="2" name="seat[]" onclick="togg()" />
+                <label for="seat-2" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-3" class="seat-select" type="checkbox" value="3" name="seat[]" onclick="togg()" />
+                <label for="seat-3" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-4" class="seat-select" type="checkbox" value="4" name="seat[]" onclick="togg()" />
+                <label for="seat-4" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-5" class="seat-select" type="checkbox" value="5" name="seat[]" onclick="togg()" />
+                <label for="seat-5" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-6" class="seat-select" type="checkbox" value="6" name="seat[]" onclick="togg()" />
+                <label for="seat-6" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-7" class="seat-select" type="checkbox" value="7" name="seat[]" onclick="togg()" />
+                <label for="seat-7" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-8" class="seat-select" type="checkbox" value="8" name="seat[]" onclick="togg()" />
+                <label for="seat-8" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-9" class="seat-select" type="checkbox" value="9" name="seat[]" onclick="togg()" />
+                <label for="seat-9" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-10" class="seat-select" type="checkbox" value="10" name="seat[]" onclick="togg()" />
+                <label for="seat-10" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-11" class="seat-select" type="checkbox" value="11" name="seat[]" onclick="togg()" />
+                <label for="seat-11" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-12" class="seat-select" type="checkbox" value="12" name="seat[]" onclick="togg()" />
+                <label for="seat-12" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-13" class="seat-select" type="checkbox" value="13" name="seat[]" onclick="togg()" />
+                <label for="seat-13" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-14" class="seat-select" type="checkbox" value="14" name="seat[]" onclick="togg()" />
+                <label for="seat-14" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-15" class="seat-select" type="checkbox" value="15" name="seat[]" onclick="togg()" />
+                <label for="seat-15" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-16" class="seat-select" type="checkbox" value="16" name="seat[]" onclick="togg()" />
+                <label for="seat-16" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-17" class="seat-select" type="checkbox" value="17" name="seat[]" onclick="togg()" />
+                <label for="seat-17" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-18" class="seat-select" type="checkbox" value="18" name="seat[]" onclick="togg()" />
+                <label for="seat-18" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-19" class="seat-select" type="checkbox" value="19" name="seat[]" onclick="togg()" />
+                <label for="seat-19" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-20" class="seat-select" type="checkbox" value="20" name="seat[]" onclick="togg()" />
+                <label for="seat-20" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-21" class="seat-select" type="checkbox" value="21" name="seat[]" onclick="togg()" />
+                <label for="seat-21" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-22" class="seat-select" type="checkbox" value="22" name="seat[]" onclick="togg()" />
+                <label for="seat-22" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-23" class="seat-select" type="checkbox" value="23" name="seat[]" onclick="togg()" />
+                <label for="seat-23" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-24" class="seat-select" type="checkbox" value="24" name="seat[]" onclick="togg()" />
+                <label for="seat-24" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-25" class="seat-select" type="checkbox" value="25" name="seat[]" onclick="togg()" />
+                <label for="seat-25" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-26" class="seat-select" type="checkbox" value="26" name="seat[]" onclick="togg()" />
+                <label for="seat-26" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-27" class="seat-select" type="checkbox" value="27" name="seat[]" onclick="togg()" />
+                <label for="seat-27" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-28" class="seat-select" type="checkbox" value="28" name="seat[]" onclick="togg()" />
+                <label for="seat-28" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-29" class="seat-select" type="checkbox" value="29" name="seat[]" onclick="togg()" />
+                <label for="seat-29" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-30" class="seat-select" type="checkbox" value="30" name="seat[]" onclick="togg()" />
+                <label for="seat-30" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-31" class="seat-select" type="checkbox" value="31" name="seat[]" onclick="togg()" />
+                <label for="seat-31" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-32" class="seat-select" type="checkbox" value="32" name="seat[]" onclick="togg()" />
+                <label for="seat-32" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-33" class="seat-select" type="checkbox" value="33" name="seat[]" onclick="togg()" />
+                <label for="seat-33" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-34" class="seat-select" type="checkbox" value="34" name="seat[]" onclick="togg()" />
+                <label for="seat-34" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-35" class="seat-select" type="checkbox" value="35" name="seat[]" onclick="togg()" />
+                <label for="seat-35" class="seat"></label>
+            </section>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="flexbox">
+
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-36" class="seat-select" type="checkbox" value="36" name="seat[]" onclick="togg()" />
+                <label for="seat-36" class="seat"></label>
+            </section>
+        </div>
+        <div class="row">
+            <section id="seat">
+                <input id="seat-37" class="seat-select" type="checkbox" value="37" name="seat[]" onclick="togg()" />
+                <label for="seat-37" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-38" class="seat-select" type="checkbox" value="38" name="seat[]" onclick="togg()" />
+                <label for="seat-38" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-39" class="seat-select" type="checkbox" value="39" name="seat[]" onclick="togg()" />
+                <label for="seat-39" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-40" class="seat-select" type="checkbox" value="40" name="seat[]" onclick="togg()" />
+                <label for="seat-40" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-41" class="seat-select" type="checkbox" value="41" name="seat[]" onclick="togg()" />
+                <label for="seat-41" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-42" class="seat-select" type="checkbox" value="42" name="seat[]" onclick="togg()" />
+                <label for="seat-42" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-43" class="seat-select" type="checkbox" value="43" name="seat[]" onclick="togg()" />
+                <label for="seat-43" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-44" class="seat-select" type="checkbox" value="44" name="seat[]" onclick="togg()" />
+                <label for="seat-44" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-45" class="seat-select" type="checkbox" value="45" name="seat[]" onclick="togg()" />
+                <label for="seat-45" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-46" class="seat-select" type="checkbox" value="46" name="seat[]" onclick="togg()" />
+                <label for="seat-46" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-47" class="seat-select" type="checkbox" value="47" name="seat[]" onclick="togg()" />
+                <label for="seat-47" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-48" class="seat-select" type="checkbox" value="48" name="seat[]" onclick="togg()" />
+                <label for="seat-48" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-49" class="seat-select" type="checkbox" value="49" name="seat[]" onclick="togg()" />
+                <label for="seat-49" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-50" class="seat-select" type="checkbox" value="50" name="seat[]" onclick="togg()" />
+                <label for="seat-50" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-51" class="seat-select" type="checkbox" value="51" name="seat[]" onclick="togg()" />
+                <label for="seat-51" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-52" class="seat-select" type="checkbox" value="52" name="seat[]" onclick="togg()" />
+                <label for="seat-52" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-53" class="seat-select" type="checkbox" value="53" name="seat[]" onclick="togg()" />
+                <label for="seat-53" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-54" class="seat-select" type="checkbox" value="54" name="seat[]" onclick="togg()" />
+                <label for="seat-54" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-55" class="seat-select" type="checkbox" value="55" name="seat[]" onclick="togg()" />
+                <label for="seat-55" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-56" class="seat-select" type="checkbox" value="56" name="seat[]" onclick="togg()" />
+                <label for="seat-56" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-57" class="seat-select" type="checkbox" value="57" name="seat[]" onclick="togg()" />
+                <label for="seat-57" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-58" class="seat-select" type="checkbox" value="58" name="seat[]" onclick="togg()" />
+                <label for="seat-58" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-59" class="seat-select" type="checkbox" value="59" name="seat[]" onclick="togg()" />
+                <label for="seat-59" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-60" class="seat-select" type="checkbox" value="60" name="seat[]" onclick="togg()" />
+                <label for="seat-60" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-61" class="seat-select" type="checkbox" value="61" name="seat[]" onclick="togg()" />
+                <label for="seat-61" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-62" class="seat-select" type="checkbox" value="62" name="seat[]" onclick="togg()" />
+                <label for="seat-62" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-63" class="seat-select" type="checkbox" value="63" name="seat[]" onclick="togg()" />
+                <label for="seat-63" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-64" class="seat-select" type="checkbox" value="64" name="seat[]" onclick="togg()" />
+                <label for="seat-64" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-65" class="seat-select" type="checkbox" value="65" name="seat[]" onclick="togg()" />
+                <label for="seat-65" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-66" class="seat-select" type="checkbox" value="66" name="seat[]" onclick="togg()" />
+                <label for="seat-66" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-67" class="seat-select" type="checkbox" value="67" name="seat[]" onclick="togg()" />
+                <label for="seat-67" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-68" class="seat-select" type="checkbox" value="68" name="seat[]" onclick="togg()" />
+                <label for="seat-68" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-69" class="seat-select" type="checkbox" value="69" name="seat[]" onclick="togg()" />
+                <label for="seat-69" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-70" class="seat-select" type="checkbox" value="70" name="seat[]" onclick="togg()" />
+                <label for="seat-70" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-71" class="seat-select" type="checkbox" value="71" name="seat[]" onclick="togg()" />
+                <label for="seat-71" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-72" class="seat-select" type="checkbox" value="72" name="seat[]" onclick="togg()" />
+                <label for="seat-72" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-73" class="seat-select" type="checkbox" value="73" name="seat[]" onclick="togg()" />
+                <label for="seat-73" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-74" class="seat-select" type="checkbox" value="74" name="seat[]" onclick="togg()" />
+                <label for="seat-74" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-75" class="seat-select" type="checkbox" value="75" name="seat[]" onclick="togg()" />
+                <label for="seat-75" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-76" class="seat-select" type="checkbox" value="76" name="seat[]" onclick="togg()" />
+                <label for="seat-76" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-77" class="seat-select" type="checkbox" value="77" name="seat[]" onclick="togg()" />
+                <label for="seat-77" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-78" class="seat-select" type="checkbox" value="78" name="seat[]" onclick="togg()" />
+                <label for="seat-78" class="seat"></label>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="flexbox">
+
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-79" class="seat-select" type="checkbox" value="79" name="seat[]" onclick="togg()" />
+                <label for="seat-79" class="seat"></label>
+            </section>
+        </div>
+        <div class="row">
+            <section id="seat">
+                <input id="seat-80" class="seat-select" type="checkbox" value="80" name="seat[]" onclick="togg()" />
+                <label for="seat-80" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-81" class="seat-select" type="checkbox" value="81" name="seat[]" onclick="togg()" />
+                <label for="seat-81" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-82" class="seat-select" type="checkbox" value="82" name="seat[]" onclick="togg()" />
+                <label for="seat-82" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-83" class="seat-select" type="checkbox" value="83" name="seat[]" onclick="togg()" />
+                <label for="seat-83" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-84" class="seat-select" type="checkbox" value="84" name="seat[]" onclick="togg()" />
+                <label for="seat-84" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-85" class="seat-select" type="checkbox" value="85" name="seat[]" onclick="togg()" />
+                <label for="seat-85" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-86" class="seat-select" type="checkbox" value="86" name="seat[]" onclick="togg()" />
+                <label for="seat-86" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-87" class="seat-select" type="checkbox" value="87" name="seat[]" onclick="togg()" />
+                <label for="seat-87" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-88" class="seat-select" type="checkbox" value="88" name="seat[]" onclick="togg()" />
+                <label for="seat-88" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-89" class="seat-select" type="checkbox" value="89" name="seat[]" onclick="togg()" />
+                <label for="seat-89" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-90" class="seat-select" type="checkbox" value="90" name="seat[]" onclick="togg()" />
+                <label for="seat-90" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-91" class="seat-select" type="checkbox" value="91" name="seat[]" onclick="togg()" />
+                <label for="seat-91" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-92" class="seat-select" type="checkbox" value="92" name="seat[]" onclick="togg()" />
+                <label for="seat-92" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-93" class="seat-select" type="checkbox" value="92" name="seat[]" onclick="togg()" />
+                <label for="seat-93" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-94" class="seat-select" type="checkbox" value="94" name="seat[]" onclick="togg()" />
+                <label for="seat-94" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-95" class="seat-select" type="checkbox" value="95" name="seat[]" onclick="togg()" />
+                <label for="seat-95" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-96" class="seat-select" type="checkbox" value="96" name="seat[]" onclick="togg()" />
+                <label for="seat-96" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-97" class="seat-select" type="checkbox" value="97" name="seat[]" onclick="togg()" />
+                <label for="seat-97" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-98" class="seat-select" type="checkbox" value="98" name="seat[]" onclick="togg()" />
+                <label for="seat-98" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-99" class="seat-select" type="checkbox" value="99" name="seat[]" onclick="togg()" />
+                <label for="seat-99" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-100" class="seat-select" type="checkbox" value="100" name="seat[]" onclick="togg()" />
+                <label for="seat-100" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-101" class="seat-select" type="checkbox" value="101" name="seat[]" onclick="togg()" />
+                <label for="seat-101" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-102" class="seat-select" type="checkbox" value="102" name="seat[]" onclick="togg()" />
+                <label for="seat-102" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-103" class="seat-select" type="checkbox" value="103" name="seat[]" onclick="togg()" />
+                <label for="seat-103" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-104" class="seat-select" type="checkbox" value="104" name="seat[]" onclick="togg()" />
+                <label for="seat-104" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-105" class="seat-select" type="checkbox" value="105" name="seat[]" onclick="togg()" />
+                <label for="seat-105" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-106" class="seat-select" type="checkbox" value="106" name="seat[]" onclick="togg()" />
+                <label for="seat-106" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-107" class="seat-select" type="checkbox" value="107" name="seat[]" onclick="togg()" />
+                <label for="seat-107" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-108" class="seat-select" type="checkbox" value="108" name="seat[]" onclick="togg()" />
+                <label for="seat-108" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-109" class="seat-select" type="checkbox" value="109" name="seat[]" onclick="togg()" />
+                <label for="seat-109" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-110" class="seat-select" type="checkbox" value="110" name="seat[]" onclick="togg()" />
+                <label for="seat-110" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-111" class="seat-select" type="checkbox" value="111" name="seat[]" onclick="togg()" />
+                <label for="seat-111" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-112" class="seat-select" type="checkbox" value="112" name="seat[]" onclick="togg()" />
+                <label for="seat-112" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-113" class="seat-select" type="checkbox" value="113" name="seat[]" onclick="togg()" />
+                <label for="seat-113" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-114" class="seat-select" type="checkbox" value="114" name="seat[]" onclick="togg()" />
+                <label for="seat-114" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-115" class="seat-select" type="checkbox" value="115" name="seat[]" onclick="togg()" />
+                <label for="seat-115" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-116" class="seat-select" type="checkbox" value="116" name="seat[]" onclick="togg()" />
+                <label for="seat-116" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-117" class="seat-select" type="checkbox" value="117" name="seat[]" onclick="togg()" />
+                <label for="seat-117" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-118" class="seat-select" type="checkbox" value="118" name="seat[]" onclick="togg()" />
+                <label for="seat-118" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-119" class="seat-select" type="checkbox" value="119" name="seat[]" onclick="togg()" />
+                <label for="seat-119" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-120" class="seat-select" type="checkbox" value="120" name="seat[]" onclick="togg()" />
+                <label for="seat-120" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-121" class="seat-select" type="checkbox" value="121" name="seat[]" onclick="togg()" />
+                <label for="seat-121" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-122" class="seat-select" type="checkbox" value="122" name="seat[]" onclick="togg()" />
+                <label for="seat-122" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-123" class="seat-select" type="checkbox" value="123" name="seat[]" onclick="togg()" />
+                <label for="seat-123" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-124" class="seat-select" type="checkbox" value="124" name="seat[]" onclick="togg()" />
+                <label for="seat-124" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-125" class="seat-select" type="checkbox" value="125" name="seat[]" onclick="togg()" />
+                <label for="seat-125" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-126" class="seat-select" type="checkbox" value="126" name="seat[]" onclick="togg()" />
+                <label for="seat-126" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-127" class="seat-select" type="checkbox" value="127" name="seat[]" onclick="togg()" />
+                <label for="seat-127" class="seat"></label>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="flexbox">
+
+        <div class="in-between"></div>
+
+        <div class="row">
+            <section id="seat-unselctable">
+                <input id="seat-166" class="seat-select" type="checkbox" value="166" name="seat[]" onclick="togg()" />
+                <label for="seat-166" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-128" class="seat-select" type="checkbox" value="128" name="seat[]" onclick="togg()" />
+                <label for="seat-128" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-129" class="seat-select" type="checkbox" value="129" name="seat[]" onclick="togg()" />
+                <label for="seat-129" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-130" class="seat-select" type="checkbox" value="130" name="seat[]" onclick="togg()" />
+                <label for="seat-130" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-131" class="seat-select" type="checkbox" value="131" name="seat[]" onclick="togg()" />
+                <label for="seat-131" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-132" class="seat-select" type="checkbox" value="132" name="seat[]" onclick="togg()" />
+                <label for="seat-132" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+        <div class="stairs"></div>
+        <div class="stairs"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-133" class="seat-select" type="checkbox" value="133" name="seat[]" onclick="togg()" />
+                <label for="seat-133" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-134" class="seat-select" type="checkbox" value="134" name="seat[]" onclick="togg()" />
+                <label for="seat-134" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-135" class="seat-select" type="checkbox" value="135" name="seat[]" onclick="togg()" />
+                <label for="seat-135" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-136" class="seat-select" type="checkbox" value="136" name="seat[]" onclick="togg()" />
+                <label for="seat-136" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-137" class="seat-select" type="checkbox" value="137" name="seat[]" onclick="togg()" />
+                <label for="seat-137" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-138" class="seat-select" type="checkbox" value="138" name="seat[]" onclick="togg()" />
+                <label for="seat-138" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-139" class="seat-select" type="checkbox" value="139" name="seat[]" onclick="togg()" />
+                <label for="seat-139" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-140" class="seat-select" type="checkbox" value="140" name="seat[]" onclick="togg()" />
+                <label for="seat-140" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-141" class="seat-select" type="checkbox" value="141" name="seat[]" onclick="togg()" />
+                <label for="seat-141" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-142" class="seat-select" type="checkbox" value="142" name="seat[]" onclick="togg()" />
+                <label for="seat-142" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-143" class="seat-select" type="checkbox" value="143" name="seat[]" onclick="togg()" />
+                <label for="seat-143" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-144" class="seat-select" type="checkbox" value="144" name="seat[]" onclick="togg()" />
+                <label for="seat-144" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-145" class="seat-select" type="checkbox" value="145" name="seat[]" onclick="togg()" />
+                <label for="seat-145" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-146" class="seat-select" type="checkbox" value="146" name="seat[]" onclick="togg()" />
+                <label for="seat-146" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-147" class="seat-select" type="checkbox" value="147" name="seat[]" onclick="togg()" />
+                <label for="seat-147" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-148" class="seat-select" type="checkbox" value="148" name="seat[]" onclick="togg()" />
+                <label for="seat-148" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-149" class="seat-select" type="checkbox" value="149" name="seat[]" onclick="togg()" />
+                <label for="seat-149" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-150" class="seat-select" type="checkbox" value="150" name="seat[]" onclick="togg()" />
+                <label for="seat-150" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-151" class="seat-select" type="checkbox" value="151" name="seat[]" onclick="togg()" />
+                <label for="seat-151" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-152" class="seat-select" type="checkbox" value="152" name="seat[]" onclick="togg()" />
+                <label for="seat-152" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-153" class="seat-select" type="checkbox" value="153" name="seat[]" onclick="togg()" />
+                <label for="seat-153" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-154" class="seat-select" type="checkbox" value="154" name="seat[]" onclick="togg()" />
+                <label for="seat-154" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-155" class="seat-select" type="checkbox" value="155" name="seat[]" onclick="togg()" />
+                <label for="seat-155" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-156" class="seat-select" type="checkbox" value="156" name="seat[]" onclick="togg()" />
+                <label for="seat-156" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-157" class="seat-select" type="checkbox" value="157" name="seat[]" onclick="togg()" />
+                <label for="seat-157" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-158" class="seat-select" type="checkbox" value="158" name="seat[]" onclick="togg()" />
+                <label for="seat-158" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-159" class="seat-select" type="checkbox" value="159" name="seat[]" onclick="togg()" />
+                <label for="seat-159" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stairs"></div>
+        <div class="stairs"></div>
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-160" class="seat-select" type="checkbox" value="160" name="seat[]" onclick="togg()" />
+                <label for="seat-160" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-161" class="seat-select" type="checkbox" value="161" name="seat[]" onclick="togg()" />
+                <label for="seat-161" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-162" class="seat-select" type="checkbox" value="162" name="seat[]" onclick="togg()" />
+                <label for="seat-162" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-163" class="seat-select" type="checkbox" value="163" name="seat[]" onclick="togg()" />
+                <label for="seat-163" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-164" class="seat-select" type="checkbox" value="164" name="seat[]" onclick="togg()" />
+                <label for="seat-164" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-165" class="seat-select" type="checkbox" value="165" name="seat[]" onclick="togg()" />
+                <label for="seat-165" class="seat"></label>
+            </section>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="flexbox">
+
+        <div class="in-between"></div>
+
+        <div class="row">
+            <section id="seat-unselctable">
+                <input id="seat-167" class="seat-select" type="checkbox" value="167" name="seat[]" onclick="togg()" />
+                <label for="seat-167" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-168" class="seat-select" type="checkbox" value="168" name="seat[]" onclick="togg()" />
+                <label for="seat-168" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-169" class="seat-select" type="checkbox" value="169" name="seat[]" onclick="togg()" />
+                <label for="seat-169" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-170" class="seat-select" type="checkbox" value="170" name="seat[]" onclick="togg()" />
+                <label for="seat-170" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-171" class="seat-select" type="checkbox" value="171" name="seat[]" onclick="togg()" />
+                <label for="seat-171" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-172" class="seat-select" type="checkbox" value="172" name="seat[]" onclick="togg()" />
+                <label for="seat-172" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stair">stair</div>
+        <div class="stairs"></div>
+        <div class="stairs"></div>
+        <div class="in-between"></div>
+        <div class="in-between"></div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-173" class="seat-select" type="checkbox" value="173" name="seat[]" onclick="togg()" />
+                <label for="seat-173" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-174" class="seat-select" type="checkbox" value="174" name="seat[]" onclick="togg()" />
+                <label for="seat-174" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-175" class="seat-select" type="checkbox" value="175" name="seat[]" onclick="togg()" />
+                <label for="seat-175" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-176" class="seat-select" type="checkbox" value="176" name="seat[]" onclick="togg()" />
+                <label for="seat-176" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-177" class="seat-select" type="checkbox" value="177" name="seat[]" onclick="togg()" />
+                <label for="seat-177" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-178" class="seat-select" type="checkbox" value="178" name="seat[]" onclick="togg()" />
+                <label for="seat-178" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-179" class="seat-select" type="checkbox" value="179" name="seat[]" onclick="togg()" />
+                <label for="seat-179" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-180" class="seat-select" type="checkbox" value="180" name="seat[]" onclick="togg()" />
+                <label for="seat-180" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-181" class="seat-select" type="checkbox" value="181" name="seat[]" onclick="togg()" />
+                <label for="seat-181" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-182" class="seat-select" type="checkbox" value="182" name="seat[]" onclick="togg()" />
+                <label for="seat-182" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-183" class="seat-select" type="checkbox" value="183" name="seat[]" onclick="togg()" />
+                <label for="seat-183" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-184" class="seat-select" type="checkbox" value="184" name="seat[]" onclick="togg()" />
+                <label for="seat-184" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-185" class="seat-select" type="checkbox" value="185" name="seat[]" onclick="togg()" />
+                <label for="seat-185" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-186" class="seat-select" type="checkbox" value="186" name="seat[]" onclick="togg()" />
+                <label for="seat-186" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-187" class="seat-select" type="checkbox" value="187" name="seat[]" onclick="togg()" />
+                <label for="seat-187" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-188" class="seat-select" type="checkbox" value="188" name="seat[]" onclick="togg()" />
+                <label for="seat-188" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-189" class="seat-select" type="checkbox" value="189" name="seat[]" onclick="togg()" />
+                <label for="seat-189" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-190" class="seat-select" type="checkbox" value="190" name="seat[]" onclick="togg()" />
+                <label for="seat-190" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-191" class="seat-select" type="checkbox" value="191" name="seat[]" onclick="togg()" />
+                <label for="seat-191" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-192" class="seat-select" type="checkbox" value="192" name="seat[]" onclick="togg()" />
+                <label for="seat-192" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-193" class="seat-select" type="checkbox" value="193" name="seat[]" onclick="togg()" />
+                <label for="seat-193" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-194" class="seat-select" type="checkbox" value="194" name="seat[]" onclick="togg()" />
+                <label for="seat-194" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-195" class="seat-select" type="checkbox" value="195" name="seat[]" onclick="togg()" />
+                <label for="seat-195" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-196" class="seat-select" type="checkbox" value="196" name="seat[]" onclick="togg()" />
+                <label for="seat-196" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-197" class="seat-select" type="checkbox" value="197" name="seat[]" onclick="togg()" />
+                <label for="seat-197" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-198" class="seat-select" type="checkbox" value="198" name="seat[]" onclick="togg()" />
+                <label for="seat-198" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-199" class="seat-select" type="checkbox" value="199" name="seat[]" onclick="togg()" />
+                <label for="seat-199" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="stairs"></div>
+        <div class="stairs"></div>
+        <div class="stair">stair</div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-200" class="seat-select" type="checkbox" value="200" name="seat[]" onclick="togg()" />
+                <label for="seat-200" class="seat"></label>
+            </section>
+        </div>
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-201" class="seat-select" type="checkbox" value="201" name="seat[]" onclick="togg()" />
+                <label for="seat-201" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-202" class="seat-select" type="checkbox" value="202" name="seat[]" onclick="togg()" />
+                <label for="seat-202" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-203" class="seat-select" type="checkbox" value="203" name="seat[]" onclick="togg()" />
+                <label for="seat-203" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-203" class="seat-select" type="checkbox" value="203" name="seat[]" onclick="togg()" />
+                <label for="seat-203" class="seat"></label>
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section id="seat">
+                <input id="seat-204" class="seat-select" type="checkbox" value="204" name="seat[]" onclick="togg()" />
+                <label for="seat-204" class="seat"></label>
+            </section>
+        </div>
+
+    </div>
+    <div class="in-between"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
